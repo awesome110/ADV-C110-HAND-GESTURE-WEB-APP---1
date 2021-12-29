@@ -1,0 +1,54 @@
+<html>
+    <head>
+        <title>Facial Recognition</title>
+        <style>
+#camera {
+    height:250px;
+    width:500px;
+    border-radius:6px;
+    border-style:double;
+    border-color:red;
+}
+#output {
+    height:250px;
+    width:500px;
+    border-radius:6px;
+    border-style:double;
+    border-color:red;
+}
+body {
+    background-color:hotpink;
+}
+.line {
+    height:3px;
+    background-color:red;
+    border:none
+}
+
+        </style>
+
+        <script src="main.js"></script>
+    </head>
+    <center>
+        <br>
+        <h1 style="font-family:monospace; color:maroon;">Image Recognition Scan</h1>
+        <br>
+        <br>
+        <label style="font-family:monospace; font-size:18px; color:red;">The model is trained to see and identify these people:</label>
+        <br>
+        <hr class="line">
+        <p style="color:red; font-family:monospace;">Arya</p>
+        <hr class="line">
+        <br>
+        <hr class="line">
+        <p style="color:red; font-family:monospace;">Adya</p>
+        <hr class="line">
+        <br>
+        <label style="color:maroon; font-family:monospace;">Camera:</label>
+        <br>
+        <div id="camera" onload="snap_photo"></div>
+        <br>
+        <label style="color:maroon; font-family:monospace;">Output:</label>
+        <div id="output"></div>
+    </center>
+</html>
